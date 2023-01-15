@@ -1,0 +1,70 @@
+<div class="order-details__container">
+    <div class="order-details__card">
+        <!--header-->
+        <div class="order-details__header">
+            <span class="order-details__header-icon material-symbols-outlined">
+                done_outline
+            </span>
+            <h1 class="order-details__header-message">
+                {{ "Order has been placed successfully" | uppercase }}
+            </h1>
+        </div>
+        <!--details-->
+        <div class="order-details__body">
+            <div class="order-details__product">
+                <img class="order-details__product-image" src="/assets/sample_product.png" alt="product image"/>
+                <div class="order-details__product-info">
+                    <h2 class="order-details__product-name">
+                        {{ "cyberpunk monitor from the future" | uppercase }}
+                    </h2>
+                    <div class="order-details__product-order-info">
+                        <h3 class="order-details__product-order-info--label">
+                            {{ "quantity :" | uppercase }}
+                        </h3>&nbsp;
+                        <h3 class="order-details__product-order-info--value">
+                            {{ "1"| uppercase }}
+                        </h3>
+                    </div>
+                    <div class="order-details__product-order-info">
+                        <h3 class="order-details__product-order-info--label">
+                            {{ "order place on :" | uppercase }}
+                        </h3>&nbsp;
+                        <h3 class="order-details__product-order-info--value">
+                            {{ "1" | date }}
+                        </h3>
+                    </div>
+                    <div class="order-details__product-order-info">
+                        <h3 class="order-details__product-order-info--label">
+                            {{ "order id :" | uppercase }}
+                        </h3>&nbsp;
+                        <h3 class="order-details__product-order-info--value">
+                            {{ " 402-9214584-6613913 "| uppercase }}
+                        </h3>
+                    </div>
+                    <div class="order-details__product-order-info">
+                        <h3 class="order-details__product-order-info--label">
+                            {{ "shipping address :" | uppercase }}
+                        </h3>&nbsp;
+                        <h3 class="order-details__product-order-info--value">
+                            {{ "405, Brigade harmony, Whitefield, Bangalore - 560 006" }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details__total">
+                <h3 class="order-details__total--label">
+                    {{ "Total :" | uppercase }}
+                </h3>&nbsp;
+                <h3 class="order-details__total--value">
+                    {{ "340000" | currency }}
+                </h3>
+            </div>
+        </div>
+        <!--customer care-->
+        <div class="order-details__footer">
+            <div class="order-details__customer-care">
+                {{ "Contact 1800 000 0000 for any assistance related to this order."}}
+            </div>
+        </div>
+    </div>
+</div>

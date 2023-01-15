@@ -1,0 +1,87 @@
+.order-details {
+    &__container {
+        height: 100vh;
+        padding: 10%;
+    }
+
+    &__card {
+        border: #bada55 0.2rem solid;
+        border-radius: 2.5rem;
+        height: 50vh;
+    }
+
+    &__header {
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+
+        // border: #bada55 0.1rem solid;
+
+        &-icon {
+            color: #bada55;
+            font-size: 4rem;
+        }
+
+        &-message {
+            font-size: 2.4
+            rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__body {
+        // border: #bada55 0.1rem solid;
+        margin: 0rem 5rem;
+    }
+
+    &__product {
+        display: flex;
+
+        &-image {
+            width: 10rem;
+            height: 10rem;
+            margin: 2rem;
+            border: #011 0.1rem solid;
+            border-radius: 1rem;
+        }
+
+        &-info {
+            // border: #bada55 0.1rem solid;
+            margin: 2rem;
+        }
+
+        &-name {
+            font-size: 1.5rem;
+        }
+
+        &-order-info {
+            display: flex;
+            margin: 0.5rem 0;
+            &--label {
+                color: #606060;
+            }
+        } 
+    }
+
+    &__total {
+        display: flex;
+        justify-content: space-between;
+        // border: #bada55 0.1rem solid;
+        margin: 2rem;
+        align-items: center;
+
+        &--label {
+            font-size: 4rem;
+            color: #606060;
+        }
+
+        &--value {
+            font-size: 4rem;
+        }
+    }
+
+    &__footer {
+        margin: 3rem;
+    }
+}
