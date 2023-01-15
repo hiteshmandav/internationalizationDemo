@@ -1,1 +1,18 @@
+<div class="app__language-picker">
+  <label for="lang" lass="app__language-picker--label">Language :</label>
+  <select
+    name="lang"
+    id="lang"
+    class="app__language-picker--options"
+    [(ngModel)]="selectedLanguage"
+    (change)="changeSelectedLanguage($any($event.target).value)"
+  >
+    <option 
+      *ngFor = "let language of supportedLanguages"
+      [value]= language.id
+    >
+      {{ language.label }}
+    </option>
+  </select> 
+</div>
 <router-outlet></router-outlet>

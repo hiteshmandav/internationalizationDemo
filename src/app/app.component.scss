@@ -1,0 +1,15 @@
+.app {
+    &__language-picker {
+        // border: #bada55 solid 0.1rem;
+        margin: 1rem;
+        padding: 2rem;
+        text-align: right;
+
+        &--options {
+            margin: 0rem 1rem;
+            border: none;
+            border-bottom: #bada55 solid 0.2rem;
+            color: #bada55;
+        }
+    }
+}
